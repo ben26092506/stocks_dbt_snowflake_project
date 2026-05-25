@@ -1,0 +1,52 @@
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Environment files / secrets
+.env
+.env.*
+*.env
+
+# dbt generated files
+dbt_stocks/dbt_stocks/target/
+dbt_stocks/dbt_stocks/dbt_packages/
+dbt_stocks/dbt_stocks/logs/
+dbt_stocks/dbt_stocks/.user.yml
+
+# Airflow logs and cache
+logs/
+infra/logs/
+infra/dags/__pycache__/
+infra/plugins/__pycache__/
+airflow.db
+airflow-webserver.pid
+
+# pw
+infra/dags/airflow_decorator_pw.py
+infra/dags/airflow_pw.py
+infra/producer/producer_api_key.py
+
+# Docker / local data
+postgres_data/
+minio_data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# General logs and temporary files
+*.log
+tmp/
+temp/
+*.tmp
